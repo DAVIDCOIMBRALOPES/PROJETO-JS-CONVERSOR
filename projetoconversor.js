@@ -1,6 +1,6 @@
 const convertButton = document.querySelector(".convert-button")
 const currencySelect = document.querySelector(".currency-select")
-
+const FirstOptionSelect = document.querySelector (".option-select")
 
 
 
@@ -10,20 +10,19 @@ function convertValues(){
     const currencyValueToConvert = document.querySelector (".currency-value-to-convert")
     const currencyValueConverted = document.querySelector (".currency-value")
     
-    
-
+    console.log(FirstOptionSelect.value)
     console.log(currencySelect.value)
 
+    
 
     const dolarToday = 6
 
     const euroToday = 7
 
     const libraToday= 8
-
-    const realToday = 1
-
-
+    
+    
+    
 
 
     if(currencySelect.value  == "dolar"){
@@ -73,6 +72,8 @@ function convertValues(){
 
     } ).format(inputCurrencyValue)
 
+
+    
     
 
 
@@ -81,8 +82,10 @@ function convertValues(){
 
 function  changeCurrency (){
 
-    const currencyName = document.getElementById("currency-dolar")
-    const currencyImage = document.querySelector(".currency-img")
+    const currencyName = document.getElementById("currency-dolar",)
+    const currencyImage = document.querySelector(".currency-img",)
+    
+    
 
     if(currencySelect.value  == "dolar"){
 
@@ -111,5 +114,4 @@ convertValues()
 }
 currencySelect.addEventListener ("change" , changeCurrency)
 convertButton.addEventListener("click", convertValues)
-
 
